@@ -136,10 +136,6 @@ var getlist_test = function (type,ntask,nway) {
     list[9] = dname + 'task1' + type + '_test' + '2' + '.png';
     list[10] = dname + 'task1' + type + '_test' + '3' + '.png';
     list[11] = dname + 'task1' + type + '_test' + '4' + '.png';
-    list[12] = dname + 'task1' + type + '_test' + '1' + '.png';
-    list[13] = dname + 'task1' + type + '_test' + '2' + '.png';
-    list[14] = dname + 'task1' + type + '_test' + '3' + '.png';
-    list[15] = dname + 'task1' + type + '_test' + '4' + '.png';
     return list;
 };
 
