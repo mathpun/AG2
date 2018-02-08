@@ -108,15 +108,38 @@ var getlist_train_demo = function (nway,r) {
 };
 
 // randomly choose a "test" image for each trial
-var getlist_test = function (type,ntask,nway,oops) {
+//var getlist_test = function (type,ntask,nway,oops) {
+//    var list = new Array();
+//    var dname = 'images_classif/';
+//  	var count = 0;
+//  	for (var i=1; i <= ntask; i++) {
+//  		var c = tu.randint(1,nway); // random choice of the image
+//  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
+//  		count++;
+//  	}
+//    return list;
+// };
+
+var getlist_test = function (type,ntask,nway) {
     var list = new Array();
     var dname = 'images_classif/';
-  	var count = 0;
-  	for (var i=1; i <= ntask; i++) {
-  		var c = tu.randint(1,nway); // random choice of the image
-  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
-  		count++;
-  	}
+    var count = 0;
+    list[0] = dname + 'task1' + type + '_test' + '1' + '.png';
+    list[1] = dname + 'task1' + type + '_test' + '2' + '.png';
+    list[2] = dname + 'task1' + type + '_test' + '3' + '.png';
+    list[3] = dname + 'task1' + type + '_test' + '4' + '.png';
+    list[4] = dname + 'task1' + type + '_test' + '1' + '.png';
+    list[5] = dname + 'task1' + type + '_test' + '2' + '.png';
+    list[6] = dname + 'task1' + type + '_test' + '3' + '.png';
+    list[7] = dname + 'task1' + type + '_test' + '4' + '.png';
+    list[8] = dname + 'task1' + type + '_test' + '1' + '.png';
+    list[9] = dname + 'task1' + type + '_test' + '2' + '.png';
+    list[10] = dname + 'task1' + type + '_test' + '3' + '.png';
+    list[11] = dname + 'task1' + type + '_test' + '4' + '.png';
+    list[12] = dname + 'task1' + type + '_test' + '1' + '.png';
+    list[13] = dname + 'task1' + type + '_test' + '2' + '.png';
+    list[14] = dname + 'task1' + type + '_test' + '3' + '.png';
+    list[15] = dname + 'task1' + type + '_test' + '4' + '.png';
     return list;
 };
 
