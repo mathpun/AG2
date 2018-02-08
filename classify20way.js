@@ -125,17 +125,17 @@ var getlist_test = function (type,ntask,nway) {
     var dname = 'images_classif/';
     var count = 0;
     list[0] = dname + 'task1' + type + '_test' + '1' + '.png';
-    list[1] = dname + 'task1' + type + '_test' + '2' + '.png';
-    list[2] = dname + 'task1' + type + '_test' + '3' + '.png';
-    list[3] = dname + 'task1' + type + '_test' + '4' + '.png';
-    list[4] = dname + 'task1' + type + '_test' + '1' + '.png';
-    list[5] = dname + 'task1' + type + '_test' + '2' + '.png';
-    list[6] = dname + 'task1' + type + '_test' + '3' + '.png';
-    list[7] = dname + 'task1' + type + '_test' + '4' + '.png';
-    list[8] = dname + 'task1' + type + '_test' + '1' + '.png';
-    list[9] = dname + 'task1' + type + '_test' + '2' + '.png';
-    list[10] = dname + 'task1' + type + '_test' + '3' + '.png';
-    list[11] = dname + 'task1' + type + '_test' + '4' + '.png';
+    list[1] = dname + 'task2' + type + '_test' + '2' + '.png';
+    list[2] = dname + 'task3' + type + '_test' + '3' + '.png';
+    list[3] = dname + 'task4' + type + '_test' + '4' + '.png';
+    list[4] = dname + 'task5' + type + '_test' + '1' + '.png';
+    list[5] = dname + 'task6' + type + '_test' + '2' + '.png';
+    list[6] = dname + 'task7' + type + '_test' + '3' + '.png';
+    list[7] = dname + 'task8' + type + '_test' + '4' + '.png';
+    list[8] = dname + 'task9' + type + '_test' + '1' + '.png';
+    list[9] = dname + 'task10' + type + '_test' + '2' + '.png';
+    list[10] = dname + 'task11' + type + '_test' + '3' + '.png';
+    list[11] = dname + 'task12' + type + '_test' + '4' + '.png';
     return list;
 };
 
