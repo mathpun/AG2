@@ -59,10 +59,10 @@ $(document).ready(function() {
 //    temporaryValue = array[currentIndex];
 //    array[currentIndex] = array[randomIndex];
 //    array[randomIndex] = temporaryValue;
-  }
+//  }
 
 //  return array;
-}
+//}
 
 // Get just the two test images for the demo
 //var getlist_test_demo = function (Q1_id,Q2_id,Q3_id,Q4_id,Q5_id,Q6_id,Q7_id,Q8_id,Q9_id,Q10_id,Q11_id,Q12_id,Q13_id,Q14_id,Q15_id,r) {
