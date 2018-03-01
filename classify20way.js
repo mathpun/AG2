@@ -28,17 +28,17 @@ $(document).ready(function() {
 });
 
 // randomly choose a "test" image for each trial
-var getlist_test = function (type,ntask,nway) {
-    var list = new Array();
-    var dname = 'images_classif/';
-  	var count = 0;
-  	for (var i=1; i <= ntask; i++) {
-  		var c = tu.randint(1,1); // random choice of the image
-  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
-  		count++;
-  	}
-    return list;
- };
+//var getlist_test = function (type,ntask,nway) {
+//    var list = new Array();
+//    var dname = 'images_classif/';
+//  	var count = 0;
+//  	for (var i=1; i <= ntask; i++) {
+//  		var c = tu.randint(1,1); // random choice of the image
+//  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
+//  		count++;
+//  	}
+//    return list;
+// };
 
 // enumerate the image set which is the training images
 var getlist_train = function (type,ntask,nway) {
