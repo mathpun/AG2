@@ -13,15 +13,6 @@ $(document).ready(function() {
 //	Q4_id = 3;
 //	Q5_id = 3;
 //	Q6_id = 2;
-//	Q7_id = 1;
-//	Q8_id = 3;
-//	Q9_id = 1;
-//	Q10_id = 3;
-	//Q11_id = 2;
-	//Q12_id = 4;
-	//Q13_id = 2;
-	//Q14_id = 2;
-	//Q15_id = 3;
 
 
 	//took out line 18,19 added line 16, shit, turns out you need spec.list_condition 
@@ -65,7 +56,6 @@ function shuffle(array) {
 }
 
 // Get just the two test images for the demo
-//var getlist_test_demo = function (Q1_id,Q2_id,Q3_id,Q4_id,Q5_id,Q6_id,Q7_id,Q8_id,Q9_id,Q10_id,Q11_id,Q12_id,Q13_id,Q14_id,Q15_id,r) {
 var getlist_test_demo = function (Q1_id,Q2_id,r) {
 
 	var list = new Array();
@@ -75,16 +65,7 @@ var getlist_test_demo = function (Q1_id,Q2_id,r) {
 	list[r[1]] = dname + 'Q2_test' + Q2_id + '.png';
 //	list[r[2]] = dname + 'Q3_test' + Q3_id + '.png';
 //	list[r[3]] = dname + 'Q4_test' + Q4_id + '.png';
-//	list[r[4]] = dname + 'Q5_test' + Q5_id + '.png';
-//	list[r[6]] = dname + 'Q7_test' + Q7_id + '.png';
-//	list[r[7]] = dname + 'Q8_test' + Q8_id + '.png';
-//	list[r[8]] = dname + 'Q9_test' + Q9_id + '.png';
-//	list[r[9]] = dname + 'Q10_test' + Q10_id + '.png';
-//	list[r[10]] = dname + 'Q11_test' + Q11_id + '.png';
-//	list[r[11]] = dname + 'Q12_test' + Q12_id + '.png';
-//	list[r[12]] = dname + 'Q13_test' + Q13_id + '.png';
-//	list[r[13]] = dname + 'Q14_test' + Q14_id + '.png';
-//	list[r[14]] = dname + 'Q15_test' + Q15_id + '.png';
+
 	return list;
 };
 
