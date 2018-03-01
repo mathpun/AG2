@@ -27,26 +27,6 @@ $(document).ready(function() {
 //	console.log("imglist_train:"+data.imglist_list_train);
 });
 
-// shuffle I found on stack overflow
-//function shuffle(array) {
-//  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-//  while (0 !== currentIndex) {
-
-//    // Pick a remaining element...
-//    randomIndex = Math.floor(Math.random() * currentIndex);
-//    currentIndex -= 1;
-
-    // And swap it with the current element.
-//    temporaryValue = array[currentIndex];
-//    array[currentIndex] = array[randomIndex];
-//    array[randomIndex] = temporaryValue;
-//  }
-
-//  return array;
-//}
-
 // Get just the two test images for the demo
 var getlist_test_demo = function (Q1_id,Q2_id) {
 
@@ -87,7 +67,7 @@ var getlist_test = function (type,ntask,nway) {
     var dname = 'images_classif/';
   	var count = 0;
   	for (var i=1; i <= ntask; i++) {
-  		var c = tu.randint(1,nway); // random choice of the image
+  		var c = tu.randint(1,1); // random choice of the image
   		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
   		count++;
   	}
