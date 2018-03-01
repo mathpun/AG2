@@ -356,9 +356,9 @@ var classification = function (spec,my) {
 		$('.'+my.class_nopts).text(data.imglist_list_train[0].length);
 
 		// apply permutation
-		var perm = tu.randperm(0,len-1);
-		data.imglist_test = tu.apply_perm(data.imglist_test,perm);
-		data.imglist_list_train = tu.apply_perm(data.imglist_list_train,perm);
+//		var perm = tu.randperm(0,len-1);
+//		data.imglist_test = tu.apply_perm(data.imglist_test,perm);
+//		data.imglist_list_train = tu.apply_perm(data.imglist_list_train,perm);
 
 		// add the demo ontop of things
 		if (my.letters_first == 'true') {
@@ -379,7 +379,9 @@ var classification = function (spec,my) {
 		// for each trial, randomize the order of the training images
 		if (my.random_choices) {
 			for (var i=0; i<data.imglist_list_train.length; i++) {
-				data.imglist_list_train[i] = tu.shuffle(data.imglist_list_train[i]);
+//				data.imglist_list_train[i] = tu.shuffle(data.imglist_list_train[i]);
+				data.imglist_list_train[i] = data.imglist_list_train[i];
+				
 			}
 		}
 
