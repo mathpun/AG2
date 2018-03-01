@@ -61,7 +61,7 @@ function shuffle(array) {
     array[randomIndex] = temporaryValue;
   }
 
-//  return array;
+  return array;
 }
 
 // Get just the two test images for the demo
