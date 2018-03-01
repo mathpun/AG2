@@ -48,13 +48,13 @@ $(document).ready(function() {
 //}
 
 // Get just the two test images for the demo
-var getlist_test_demo = function (Q1_id,Q2_id,r) {
+var getlist_test_demo = function (Q1_id,Q2_id) {
 
 	var list = new Array();
 	var dname = 'images_classif_demo/';
 //  	list[0] = dname + 'latin_test' + latin_id + '.png';
-	list[r[0]] = dname + 'Q1_test' + Q1_id + '.png';
-	list[r[1]] = dname + 'Q2_test' + Q2_id + '.png';
+	list[0] = dname + 'Q1_test' + Q1_id + '.png';
+	list[1] = dname + 'Q2_test' + Q2_id + '.png';
 //	list[r[2]] = dname + 'Q3_test' + Q3_id + '.png';
 //	list[r[3]] = dname + 'Q4_test' + Q4_id + '.png';
 
@@ -62,19 +62,19 @@ var getlist_test_demo = function (Q1_id,Q2_id,r) {
 };
 
 // Get two lists of training images
-var getlist_train_demo = function (nway,r) {
+var getlist_train_demo = function (nway) {
 	var list = new Array();
 	var dname = 'images_classif_demo/';
 //
 
-	list[r[0]] = new Array();
+	list[0] = new Array();
 	for (var c=1; c <= nway; c++ ) {
-  		list[r[0]][c-1] = dname + 'Q1_train' + c + '.png';
+  		list[0][c-1] = dname + 'Q1_train' + c + '.png';
     }
 
-	list[r[1]] = new Array();
+	list[1] = new Array();
 	for (var c=1; c <= nway; c++ ) {
-	  	list[r[1]][c-1] = dname + 'Q2_train' + c + '.png';
+	  	list[1][c-1] = dname + 'Q2_train' + c + '.png';
 	  }
 
 		
