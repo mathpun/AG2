@@ -9,14 +9,8 @@ $(document).ready(function() {
 	//latin_id = 2;
 	Q1_id = 2;
 	Q2_id = 3;
-//	Q3_id = 1;
-//	Q4_id = 3;
-//	Q5_id = 3;
-//	Q6_id = 2;
 
 
-	//took out line 18,19 added line 16, shit, turns out you need spec.list_condition 
-	//var spec = {};
 	var spec = {};
 	spec.list_condition = ['a','a'];
 
@@ -24,36 +18,34 @@ $(document).ready(function() {
 	var condition = task.getCondition();
 
 	var data = {};
-	var inds = shuffle([0,1]);
-//	var inds = 0;
-	data.imglist_demo = getlist_test_demo(Q1_id,Q2_id,inds);
-	data.imglist_list_demo = getlist_train_demo(nway,inds);
+	data.imglist_demo = getlist_test_demo(Q1_id,Q2_id);
+	data.imglist_list_demo = getlist_train_demo(nway);
 	data.imglist_test = getlist_test(condition,ntask,nway);
 	data.imglist_list_train = getlist_train(condition,ntask,nway);
 	task.load_images(data);
-	console.log("imglist_test:"+data.imglist_test);
-	console.log("imglist_train:"+data.imglist_list_train);
+//	console.log("imglist_test:"+data.imglist_test);
+//	console.log("imglist_train:"+data.imglist_list_train);
 });
 
 // shuffle I found on stack overflow
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+//function shuffle(array) {
+//  var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+//  while (0 !== currentIndex) {
 
 //    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+//    randomIndex = Math.floor(Math.random() * currentIndex);
+//    currentIndex -= 1;
 
     // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
+//    temporaryValue = array[currentIndex];
+//    array[currentIndex] = array[randomIndex];
+//    array[randomIndex] = temporaryValue;
+//  }
 
-  return array;
-}
+//  return array;
+//}
 
 // Get just the two test images for the demo
 var getlist_test_demo = function (Q1_id,Q2_id,r) {
@@ -90,17 +82,17 @@ var getlist_train_demo = function (nway,r) {
 };
 
 // randomly choose a "test" image for each trial
-//var getlist_test = function (type,ntask,nway,oops) {
-//    var list = new Array();
-//    var dname = 'images_classif/';
-//  	var count = 0;
-//  	for (var i=1; i <= ntask; i++) {
-//  		var c = tu.randint(1,nway); // random choice of the image
-//  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
-//  		count++;
-//  	}
-//    return list;
-// };
+var getlist_test = function (type,ntask,nway) {
+    var list = new Array();
+    var dname = 'images_classif/';
+  	var count = 0;
+  	for (var i=1; i <= ntask; i++) {
+  		var c = tu.randint(1,nway); // random choice of the image
+  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
+  		count++;
+  	}
+    return list;
+ };
 
 var getlist_test = function (type,ntask,nway) {
     var list = new Array();
