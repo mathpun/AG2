@@ -79,7 +79,7 @@ var classification = function (spec,my) {
 		// randomize the order of the training choices?
 		my.check_bin_param(my.url.param('randomize'));
 		if (my.url.param('randomize') !== undefined) {
-			my.random_choices = (my.url.param('randomize') === "true");
+			my.random_choices = (my.url.param('randomize') === "false");
 		}
 		// process URL parameters
 		if (my.url.param('ntrials') !== undefined) {
