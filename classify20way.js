@@ -45,24 +45,24 @@ $(document).ready(function() {
 });
 
 // shuffle I found on stack overflow
-//function shuffle(array) {
-//  var currentIndex = array.length, temporaryValue, randomIndex;
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
-//  while (0 !== currentIndex) {
+  while (0 !== currentIndex) {
 
 //    // Pick a remaining element...
-//    randomIndex = Math.floor(Math.random() * currentIndex);
-//    currentIndex -= 1;
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
 
     // And swap it with the current element.
-//    temporaryValue = array[currentIndex];
-//    array[currentIndex] = array[randomIndex];
-//    array[randomIndex] = temporaryValue;
-//  }
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
 
 //  return array;
-//}
+}
 
 // Get just the two test images for the demo
 //var getlist_test_demo = function (Q1_id,Q2_id,Q3_id,Q4_id,Q5_id,Q6_id,Q7_id,Q8_id,Q9_id,Q10_id,Q11_id,Q12_id,Q13_id,Q14_id,Q15_id,r) {
@@ -109,17 +109,17 @@ var getlist_train_demo = function (nway,r) {
 };
 
 // randomly choose a "test" image for each trial
-var getlist_test = function (type,ntask,nway,oops) {
-    var list = new Array();
-    var dname = 'images_classif/';
-  	var count = 0;
-  	for (var i=1; i <= ntask; i++) {
-  		var c = tu.randint(1,nway); // random choice of the image
-  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
-  		count++;
-  	}
-    return list;
- };
+//var getlist_test = function (type,ntask,nway,oops) {
+//    var list = new Array();
+//    var dname = 'images_classif/';
+//  	var count = 0;
+//  	for (var i=1; i <= ntask; i++) {
+//  		var c = tu.randint(1,nway); // random choice of the image
+//  		list[count] = dname + 'task' + i + type + '_test' + c + '.png';
+//  		count++;
+//  	}
+//    return list;
+// };
 
 var getlist_test = function (type,ntask,nway) {
     var list = new Array();
